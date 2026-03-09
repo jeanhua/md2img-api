@@ -66,7 +66,7 @@ getBrowser().catch(console.error);
 
 async function renderToImage(htmlContent, viewportOptions = {}) {
     const viewport = {
-        width: 850,
+        width: 780,
         height: 100,
         deviceScaleFactor: 1.5,
         ...viewportOptions

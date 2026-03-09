@@ -21,7 +21,7 @@ body {
   padding: 16px 8px;
   border-radius: 16px;
   box-shadow: var(--card-shadow);
-  width: 95%;
+  width: calc(100% - 16px);
   box-sizing: border-box;
   border: 1px solid rgba(200, 210, 225, 0.5);
 }
@@ -29,7 +29,7 @@ body {
 .markdown-body {
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif,
                "Noto Color Emoji", "Segoe UI Emoji", "Apple Color Emoji" !important;
-  font-size: 17px !important;
+  font-size: 22px !important;
   line-height: 1.8 !important;
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
@@ -49,7 +49,7 @@ body {
   border-radius: 8px !important;
   background-color: var(--code-bg) !important;
   padding: 18px 20px !important;
-  font-size: 14.5px !important;
+  font-size: 17px !important;
   line-height: 1.65 !important;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.06);
