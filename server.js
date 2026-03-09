@@ -17,42 +17,15 @@ const STYLES_DIR = path.join(__dirname, 'styles');
 const githubMarkdownCss = fs.readFileSync(path.join(STYLES_DIR, 'github-markdown.min.css'), 'utf-8');
 const tokyoNightCss     = fs.readFileSync(path.join(STYLES_DIR, 'tokyo-night-dark.min.css'), 'utf-8');
 
+const style = fs.readFileSync('./style.css')
+
 const INLINE_STYLES = `
 <style>
 ${githubMarkdownCss}
 ${tokyoNightCss}
-
-:root { --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
-body {
-    margin: 0; display: flex; justify-content: center;
-    background: var(--bg-gradient); padding: 30px 10px;
-    min-height: fit-content; height: auto;
-}
-.container {
-    background: white; padding: 45px 35px; border-radius: 16px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1); width: 750px; box-sizing: border-box;
-}
-.markdown-body {
-    font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif,
-                 "Noto Color Emoji", "Segoe UI Emoji", "Apple Color Emoji" !important;
-    font-size: 20px !important; line-height: 1.85 !important;
-    color: #2c3e50; -webkit-font-smoothing: antialiased;
-}
-.markdown-body h1, .markdown-body h2, .markdown-body h3 {
-    font-weight: 600 !important; color: #1a1a1a;
-    margin-top: 24px !important; margin-bottom: 16px !important;
-}
-.markdown-body pre {
-    border-radius: 12px !important; background-color: #1a1b26 !important;
-    padding: 24px !important; font-size: 16px !important;
-    line-height: 1.6 !important; overflow: hidden; border: 1px solid #292e42;
-}
-.markdown-body pre code {
-    font-family: 'Fira Code', 'Menlo', 'Monaco', monospace !important;
-    color: #cfc9c2 !important; background: transparent !important; text-shadow: none !important;
-}
-.hljs { display: block; overflow-x: auto; padding: 0; color: #a9b1d6 !important; background: transparent !important; }
+${style}
 </style>
+
 `;
 
 // ─── 配置 marked 语法高亮

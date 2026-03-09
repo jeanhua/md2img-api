@@ -1,0 +1,72 @@
+:root {
+  --bg-gradient: #fffaf5;
+  --card-shadow: 0 8px 24px rgba(0, 0, 0, 0.07), 0 2px 8px rgba(0, 0, 0, 0.05);
+  --text-primary: #1e2d3d;
+  --text-secondary: #4a5568;
+  --code-bg: #1c1e2e;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: var(--bg-gradient);
+  padding: 6px 0;
+  min-height: fit-content;
+  height: auto;
+}
+
+.container {
+  background: white;
+  padding: 16px 8px;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  width: 95%;
+  box-sizing: border-box;
+  border: 1px solid rgba(200, 210, 225, 0.5);
+}
+
+.markdown-body {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif,
+               "Noto Color Emoji", "Segoe UI Emoji", "Apple Color Emoji" !important;
+  font-size: 17px !important;
+  line-height: 1.8 !important;
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3 {
+  font-weight: 600 !important;
+  color: #111827;
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+  letter-spacing: -0.01em;
+}
+
+.markdown-body pre {
+  border-radius: 8px !important;
+  background-color: var(--code-bg) !important;
+  padding: 18px 20px !important;
+  font-size: 14.5px !important;
+  line-height: 1.65 !important;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.markdown-body pre code {
+  font-family: 'Fira Code', 'Menlo', 'Monaco', monospace !important;
+  color: #cbc9c2 !important;
+  background: transparent !important;
+  text-shadow: none !important;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  color: #a9b1d6 !important;
+  background: transparent !important;
+}

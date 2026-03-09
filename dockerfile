@@ -22,6 +22,7 @@ COPY package.json ./
 RUN npm install --omit=dev
 
 COPY server.js ./
+COPY style.css ./
 
 RUN mkdir -p /app/styles \
     && wget -q -O /app/styles/github-markdown.min.css \
