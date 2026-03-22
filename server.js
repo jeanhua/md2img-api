@@ -28,6 +28,8 @@ ${style}
 
 `;
 
+marked.use({ breaks: true });
+
 // ─── 配置 marked 语法高亮
 marked.use(markedHighlight({
     langPrefix: 'hljs language-',
