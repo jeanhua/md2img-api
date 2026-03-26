@@ -1,3 +1,5 @@
+![example](./docs/example.png)
+
 # md2img-api
 
 Markdown/HTML 转 PNG 图片渲染 API 服务
@@ -86,7 +88,7 @@ GET /health
 ### Docker 部署（推荐）
 
 ```bash
-# 运行镜像
+# 直接运行镜像
 docker run -d -p 3000:3000 --name md2img-api jeanhua/md2img-api:latest
 
 # 或者手动构建镜像
